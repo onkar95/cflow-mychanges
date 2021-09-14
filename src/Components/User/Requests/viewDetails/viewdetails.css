@@ -1,35 +1,40 @@
-.viewDetails{
+.viewDetails {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
 }
 
-.viewDetail_sideMenu{
+.viewDetail_sideMenu {
     width: 17%;
     margin: 40px 10px;
     /* display: flex; */
 }
-.section_butns{
+
+.section_butns {
     width: 80%;
     display: flex;
     margin: 30px 10px;
     /* flex-flow: row nowrap; */
 }
-.white_theme{
-    color:black !important;
+
+.white_theme {
+    color: black !important;
 }
-.section_butns button{
-    background-color: transparent ;
+
+.section_butns button {
+    background-color: transparent;
     color: white;
     border-style: none;
     border: none;
     font-size: large;
 }
-.section_butns img{
+
+.section_butns img {
     /* width: 20px;
     height: 20px; */
 }
-.viewDetail_sections{
+
+.viewDetail_sections {
     width: 70%;
 }
 
@@ -49,11 +54,12 @@
 
 /* order details */
 
-.items_div{
+.items_div {
     display: flex;
     flex-wrap: wrap;
 }
-.items{
+
+.items {
     margin: 10px;
     display: flex;
     flex-flow: column wrap;
@@ -139,10 +145,10 @@ p {
     color: #8A8A8A;
 }
 
-.divider-header{
+.divider-header {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .white-text {
@@ -240,7 +246,7 @@ hr.solid {
     margin-right: 15rem;
 }
 
-.type-size-wrapper{
+.type-size-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -409,7 +415,7 @@ hr.solid {
 .pitch-summary-desc {
     font-family: Open Sans;
     font-style: normal;
-    font-weight: normal;    
+    font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     display: flex;
@@ -442,17 +448,20 @@ hr.solid {
 .invoice-wrapper {
     display: flex;
     flex-flow: column wrap;
+    width: 100%;
 }
 
 .invoice-details-wrapper {
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+
 }
 
 .invoice-details-rows {
     display: flex;
     flex-flow: column wrap;
-    margin-right: 10rem;
+    /* margin-right: 10rem; */
 }
 
 .invoice-details-row-1 {
@@ -476,7 +485,7 @@ hr.solid {
     color: #FFFBF2;
 }
 
-.grand-total-wrapper{
+.grand-total-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -509,10 +518,10 @@ hr.solid {
 
 @media only screen and (min-width: 1024px) {
 
-    .viewDetails{
+    .viewDetails {
         display: flex;
         width: 100%;
-    
+
     }
 
     .order-details-top-container {
@@ -534,12 +543,30 @@ hr.solid {
     }
 }
 
+@media only screen and (min-width: 700px) {
+    .invoice-details-rows {
+        margin: 0 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .invoice-details-wrapper {
+        display: flex;
+        /* flex-flow: wrap; */
+        /* width: 70%; */
+       flex-wrap: wrap;
+    }
+    .invoice-details-rows {
+        margin: 20 10px;
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width: 500px) {
-    .viewDetail_sections{
+    .viewDetail_sections {
         width: 30%;
     }
 
-    .viewDetail_sideMenu{
+    .viewDetail_sideMenu {
         width: 30%;
         margin: 40px 10px;
     }
@@ -551,11 +578,12 @@ hr.solid {
         margin-top: -1rem;
         margin-bottom: 3rem;
     }
-    
+
     .buttons {
         display: flex;
         flex-flow: row wrap;
     }
+
     .grand-total-amount {
         font-family: Open Sans;
         font-style: normal;
@@ -566,7 +594,7 @@ hr.solid {
         align-items: center;
         text-align: center;
         color: #FFB600;
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
     }
 
     .order-details-container {
@@ -576,7 +604,7 @@ hr.solid {
         justify-content: center;
         margin-left: 2rem;
     }
-    
+
     .vendor-details-container {
         display: flex;
         flex-flow: column nowrap;
@@ -608,14 +636,14 @@ hr.solid {
         margin-bottom: 2rem;
     }
 
-    .viewDetails{
+    .viewDetails {
         display: flex;
         flex-flow: column nowrap;
         width: 100%;
     }
 
-    .viewDetail_sections{
+    .viewDetail_sections {
         width: 100%;
     }
-    
+
 }

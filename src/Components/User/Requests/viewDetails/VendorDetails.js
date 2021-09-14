@@ -181,7 +181,7 @@ const VendorDetails = ({
       <div style={{ width: '100%' }}>
         <hr className='solid'></hr>
       </div>
-      {accept ?
+      {accept ||selectedTableItem?.product_status=="acceptedPitch" ?
         <div className='personal-info-content-wrapper'>
           <div className='personal-info-content-rows'>
             <div className='personal-info-content-row'>

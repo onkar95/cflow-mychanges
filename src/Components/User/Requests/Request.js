@@ -25,9 +25,6 @@ const Request = ({theme, recent_products,getAllVendor,setCurrentSection,maximum_
             <div className='request_containeruser'>
                 <RequestStats theme={theme} recent_products={recent_products} setCurrentSection={setCurrentSection} setSelectedTableItem={setSelectedTableItem} pendingRequests={pendingRequests} acceptedRequests={acceptedRequests} rejectedRequests={rejectedRequests} pitchedRequests={pitchedRequests} newRequests={newRequests} Arrow={Arrow} SortArrow={SortArrow} SortArrow2={SortArrow2} SortArrow3={SortArrow3}/>
                 <TableSection theme={theme} getAllVendor={getAllVendor} setCurrentSection={setCurrentSection} newRequests={newRequests} savedRequests={savedRequests} pitchedRequests={pitchedRequests} setSelectedTableItem={setSelectedTableItem} selectedTableItem={selectedTableItem} temp_filter_new_requests={temp_filter_new_requests} setTemp_filter_new_requests={setTemp_filter_new_requests} temp_filter_pitched_requests={temp_filter_pitched_requests} setTemp_filter_pitched_requests={setTemp_filter_pitched_requests} temp_filter_saved_requests={temp_filter_saved_requests} setTemp_filter_saved_requests={setTemp_filter_saved_requests} temp_filter={temp_filter} tableSwitch={tableSwitch} setTableSwitch={setTableSwitch} Arrow={Arrow} SortArrow={SortArrow} SortArrow2={SortArrow2} SortArrow3={SortArrow3} SortArrow3Orange={SortArrow3Orange}/>
-
-                
-                
             </div>
 
         </div>

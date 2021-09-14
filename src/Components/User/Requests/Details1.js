@@ -69,7 +69,7 @@ const Details1 = ({ setCurrentSection, selectedTableItem, getAllVendor, theme })
     return (
 
         <>
-            <ViewDetails setCurrentSection={setCurrentSection} theme={theme} getAllVendor={getAllVendor} />
+            <ViewDetails setCurrentSection={setCurrentSection} selectedTableItem={selectedTableItem} theme={theme} getAllVendor={getAllVendor} />
         </>
         // <div className="details">
         //     <div className='breadcrumbs'>
@@ -324,6 +324,8 @@ const Details1 = ({ setCurrentSection, selectedTableItem, getAllVendor, theme })
 
         // </div>
 
+        
+        
     )
 }
 
